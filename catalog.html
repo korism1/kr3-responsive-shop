@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Каталог смартфонов. Учебный каталог смартфонов ShopProject."><title>Каталог смартфонов — ShopProject</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><script src="js/main.js" defer></script></head><body><a class="skip-link" href="#main-content">Перейти к содержимому</a><header><div class="site-header"><a class="site-logo" href="index.html">ShopProject</a><nav class="site-nav" id="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a href="index.html" >Главная</a></li><li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="order.html" >Заявка</a></li><li><a href="contacts.html" >Контакты</a></li></ul></nav></div></header><main id="main-content" class="main" tabindex="-1">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span>Каталог</span>
+    </nav>
+
+    <section class="section">
+      <h1>Каталог товаров</h1>
+      <p>
+        Смартфоны Samsung, Apple и Xiaomi: сравните основные характеристики и выберите модель.
+      </p>
+    </section>
+
+    <div class="catalog-layout">
+      <aside class="catalog-filters">
+        <h2>Фильтры</h2>
+
+        <form class="filters-form" action="#" method="get">
+          <fieldset><legend>Производитель</legend><label><input type="checkbox" name="brand" value="Samsung"> Samsung</label><label><input type="checkbox" name="brand" value="Apple"> Apple</label><label><input type="checkbox" name="brand" value="Xiaomi"> Xiaomi</label></fieldset>
+
+          <fieldset>
+            <legend>Цена</legend>
+
+            <label for="price-from">От</label>
+            <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
+
+            <label for="price-to">До</label>
+            <input id="price-to" name="price-to" type="number" min="0" placeholder="60000">
+          </fieldset>
+
+          <button class="button" type="submit">Применить</button>
+        </form>
+      </aside>
+
+      <section class="catalog-products">
+        <h2>Смартфоны</h2>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <img class="product-card__image" src="images/galaxy-a55-960.webp" srcset="images/galaxy-a55-480.webp 480w, images/galaxy-a55-960.webp 960w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 90vw" alt="Samsung Galaxy A55 5G: вид спереди и сзади" width="1000" height="564" loading="lazy">
+            <h3>Samsung Galaxy A55 5G, 128 ГБ</h3>
+            <p>Экран Super AMOLED 6,6″, камера 50 Мп и аккумулятор 5000 мА·ч.</p>
+            <p class="product-card__price">Цена: 29 990 ₽</p>
+            <a class="button" href="product.html">Подробнее</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/iphone-15-960.webp" alt="Apple iPhone 15 в разных цветах" width="1000" height="1000" loading="lazy">
+            <h3>Apple iPhone 15, 128 ГБ</h3>
+            <p>OLED-экран 6,1″, процессор A16 Bionic, камера 48 Мп и разъём USB-C.</p>
+            <p class="product-card__price">Цена: 59 990 ₽</p>
+            <a class="button" href="index.html#iphone-15">К заказу</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/redmi-note-13-960.webp" alt="Xiaomi Redmi Note 13 в разных цветах" width="1200" height="600" loading="lazy">
+            <h3>Xiaomi Redmi Note 13, 128 ГБ</h3>
+            <p>AMOLED-экран 6,67″, камера 108 Мп и аккумулятор 5000 мА·ч.</p>
+            <p class="product-card__price">Цена: 16 990 ₽</p>
+            <a class="button" href="index.html#redmi-note-13">К заказу</a>
+          </article>
+        </div>
+      </section>
+    </div></main><footer id="contacts"><div class="footer-inner"><p><strong>ShopProject</strong></p></div></footer></body></html>
